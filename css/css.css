@@ -32,6 +32,7 @@ body { font-size:12px; font-family:"微软雅黑"; }
 .triangleUp { border-bottom:4px solid #ca0309; }
 .triangleDownRed { border-top:4px solid #ca0309; }
 .triangleDownGray { border-top:4px solid #c4bdbd; }
+
 /*end public style*/
 
 /* layout */
@@ -224,19 +225,7 @@ body{ margin-bottom:30px;}
 .sList .afterMore span{ height:24px; line-height:24px; color:#ffffff; display:inline-block;}
 .sList .afterMore p{ height:20px; line-height:20px;  font-weight:bold; color:#ffffff;  position:absolute; bottom:-2px; right:6px; font-size:20px; }
 
-.tab{ height:25px; border-bottom:1px solid #dadada; }
-.tab ul{  height:26px; margin-bottom:-1px;}
-.tab ul li{ height:24px; line-height:24px; color:#666666; float:left; border:1px solid #dadada; margin-right:-1px; text-align:center; border-radius:4px 4px 0 0; position:relative;}
-.tab li a { top:10px; right:12px; }
-.tab ul .active{ height:25px; line-height:25px; border-bottom:none; background:#fff;font-weight:bold; color:#454545;}
-
-.section .tab { padding:0 10px; cursor:pointer; }
-.section .tab li { width:98px; }
-.sideSection .tab { padding:0 6px; height:23px; }
-.sideSection .tab ul .active{ height:23px; line-height:23px; border-bottom:none; background:#fff;font-weight:bold; color:#454545;}
-.sideSection .tab li { width:66px; height:22px; }
-
-.listSection{ padding:3px 0; display:none;}
+.listSection{ display:none; padding:3px 0; }
 .listSection li{ height:27px; line-height:27px; border-bottom:1px dotted #cbcbca; background: url(../img/dot.gif) no-repeat 5px center; vertical-align: middle;}
 .listSection li a{  float:left; color:#333; text-indent:14px;}
 .listSection .noB{ border-bottom:none; padding-bottom:1px;}
@@ -247,6 +236,18 @@ body{ margin-bottom:30px;}
 .listSection .title .col1, .listSection .col2, .listSection .col3{text-align:center; }
 .listSection .title{ background:none; color:#999999;}
 .listSection .col2 img{ position:relative; top:9px;}
+
+.tab ul{  height:26px; margin-bottom:-1px;}
+.tab ul li{ height:24px; line-height:24px; color:#666666; float:left; border:1px solid #dadada; margin-right:-1px; text-align:center; border-radius:4px 4px 0 0; position:relative;}
+.tab li a { top:10px; right:12px; }
+.tab ul .active{ height:25px; line-height:25px; border-bottom:none; background:#fff;font-weight:bold; color:#454545;}
+
+.section .tab { padding:0 10px; cursor:pointer; height:25px; border-bottom:1px solid #dadada; }
+.section .tab li { width:98px; }
+.sideSection .tab ul{  height:24px; margin-bottom:-2px;}
+.sideSection .tab { padding:0 6px; height:23px; border-bottom:1px solid #dadada; }
+.sideSection .tab ul .active{ height:23px; line-height:23px; border-bottom:none; background:#fff;font-weight:bold; color:#454545;}
+.sideSection .tab li { width:66px; height:22px; line-height:22px;}
 
 .section  .col1{ width:255px; }
 .section  .col2{ width:51px;  }
@@ -271,13 +272,12 @@ body{ margin-bottom:30px;}
 .helpF{ border-bottom:1px solid #ededee; height:33px; padding:11px 0; margin-bottom:16px;}
 .helpF strong{ background:url(../img/help.gif) no-repeat 8px 0; padding: 0 30px; height:18px; line-height:18px; color:#b80000; font-weight:bold; font-size:15px; font-family:Arial;  }
 .helpF span{ padding-left:36px;  background:url(../img/help.gif) no-repeat 12px -44px;  height:18px; line-height:18px; font-family:Arial;}
-.helpLis{ height:100px;}
+.helpLis{ height:100px; width:144px;}
 .helpLis p{ height:18px; line-height:18px; font-weight:bold; padding-left:10px;}
-.helpLis ul{  }
 .helpLis li{padding-left:22px; height:18px; line-height:18px;  background:url(../img/dot.gif) no-repeat 15px 8px;}
 
-.madia{ padding:7px 10px 33px 0;}
-.madia li{ width:318px; height:34px; padding-top:8px;  vertical-align:top; }
+.madia{ height:205px; padding-top:3px;}
+.madia li{ width:318px; height:34px; padding-top:8px;  vertical-align:middle; }
 .madia li a{  width: 88px;  float:left;}
 .madia li p{ width:220px; height:34px; line-height:17px; float:right; }
 
@@ -304,7 +304,7 @@ body{ margin-bottom:30px;}
 .sCate{  padding-bottom:2px;  }
 .sCate li { margin-bottom:10px;  border-bottom:1px dashed #cbcbca; height:83px;}
 .sCate li img, .rebate img{ height:78px; width:98px; float:left;}
-.sCate li .cWrap, .rebate .cWrap{ font-family:'微软雅黑'; font-size:12px; float:right;}
+.sCate li .cWrap, .rebate .cWrap{ width:108px; font-family:'微软雅黑'; font-size:12px; float:right;}
 .sCate li h3, .rebate h3{ font-weight:normal;  height:30px; line-height:30px;}
 .sCate li h3 a, .rebate h3 a{color:#bb0d0d; font-size:12px;}
 .sCate li h3 a:hover, .rebate h3 a:hover{ text-decoration:underline;}
@@ -312,9 +312,8 @@ body{ margin-bottom:30px;}
 .sCate li p a, .rebate p a{ color:#666666;}
 .sCate li p a:hover, .rebate p a:hover{ text-decoration:underline;}
 
-.CBD{}
 .CBD img{ width:214px; height:110px; }
-.CBD a{ height:28px; line-height:28px; display:inline-block;}
+.CBD a{ height:28px; line-height:28px; display:inline-block; color:#666666;}
 .CBD a:hover{ text-decoration:underline;}
 
 .rebate{height:83px;}
@@ -329,9 +328,10 @@ body{ margin-bottom:30px;}
 .rebateLis  em{ color:#c3c3c3;}
 
 .rebateWrap{ height:328px;}
-.rebate1{ padding-bottom:17px; padding-right:10px;}
+.rebate1{ padding-bottom:17px;}
 .rebate1 img{ height:67px; width:90px; border:1px solid #dadada; padding:2px;}
-.rebate1 .cWrap{ font-family:'微软雅黑'; }
+.rebate1 li{ width:107px; float:left;}
+.rebate1 .rWrap{ font-family:'微软雅黑'; }
 .rebate1 h3{ font-weight:normal; color:#bb0d0d; height:27px; line-height:27px; font-size:11px;}
 .rebate1 p{height:17px; line-height:17px; color:#999999; font-size:11px;}
 .rebate1 p span{ color:#666666; font-size:11px;}
